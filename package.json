@@ -1,0 +1,36 @@
+{
+  "name": "sdcanvas",
+  "version": "3.3.4",
+  "description": "SD.Canvas: Experimental Canvas for SD.Next",
+  "author": "Vladimir Mandic <mandic00@live.com>",
+  "bugs": {
+    "url": "https://github.com/vladmandic/sdcanvas/issues"
+  },
+  "homepage": "https://github.com/vladmandic/sdcanvas",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmandic/sdcanvas.git"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/neu run",
+    "build": "node_modules/.bin/neu build",
+    "lint": "node_modules/.bin/eslint",
+    "dist": "cp node_modules/htmx.org/dist/htmx.esm.js src/dist/ && cp node_modules/fabric/dist/index.mjs src/dist/fabric.esm.js"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
+    "@neutralinojs/lib": "^5.5.0",
+    "@neutralinojs/neu": "^11.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "fabric": "^6.5.4",
+    "globals": "^15.14.0",
+    "htmx.org": "2.0.4"
+  }
+}
