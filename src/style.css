@@ -1,20 +1,57 @@
+@font-face { font-family: 'NotoSans'; font-display: swap; font-style: normal; font-weight: 100; src: local('NotoSans'), url('icons/notosans-nerdfont-regular.ttf') }
+
+:root {
+  --zoom: 100%;
+  --font-size: 14px;
+  --font-family: 'NotoSans';
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
 body {
-    background-color: #202020;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-#neutralinoapp {
-    text-align: center;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: default;
+#navbar {
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    height: 100vh;
+    float: left;
+    padding: 1em;
 }
 
-#neutralinoapp h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+img {
+  width: var(--zoom);
+  object-fit: cover;
 }
 
-#neutralinoapp > div {
-    font-size: 16px;
-    font-weight: normal;
+#panel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.panel {
+  width: -webkit-fill-available;
+}
+
+#log {
+  padding: 1em;
+}
+
+canvas.lower-canvas {
+  background-color: black;
+}
+
+#left, #right {
+  place-items: center;
 }

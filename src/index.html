@@ -9,7 +9,39 @@
     <script src="dist/main.js" type="module"></script>
   </head>
   <body>
-    <div id="main">
+
+    <div id="navbar">
+      tbd: icon bar with drawers
     </div>
+
+    <sl-split-panel vertical style="height: 100vh" position="90">
+      <div id="panel" slot="start">
+        <sl-split-panel horizontal position="50" class="panel">
+          <div id="left" slot="start">
+            <canvas id="inCanvas" width="1024" height="1024"></canvas>
+          </div>
+          <div id="right" slot="end">
+            <canvas id="ouCanvas" width="1024" height="1024"></canvas>
+          </div>
+        </sl-split-panel>
+      
+        <!--
+        <sl-image-comparer id="image">
+          <img slot="before" id="input" alt="input image"
+            src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80&sat=-100&bri=-5"
+          />
+          <img slot="after" id="output" alt="output image"
+            src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+        </sl-image-comparer>       
+        -->
+
+      </div>
+
+      <div id="log" slot="end">
+        tbd: log / progress / exif
+      </div>
+    </sl-split-panel>
+
   </body>
 </html>

@@ -21,7 +21,7 @@
     "build": "npm run bundle && node_modules/.bin/neu build",
     "lint": "node_modules/.bin/eslint",
     "bundle": "node_modules/.bin/esbuild --outfile=src/dist/main.js --sourcemap --target=esnext --bundle src/js/main.ts --format=esm --platform=browser",
-    "serve": "node_modules/.bin/esbuild --outfile=src/dist/main.js --sourcemap --target=esnext --bundle src/js/main.ts --format=esm --platform=browser --watch --servedir=src"
+    "serve": "node_modules/.bin/esbuild --outfile=src/dist/main.js --sourcemap --target=esnext --bundle src/js/main.ts --format=esm --platform=browser --watch --servedir=src --loader:.ttf=dataurl"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -29,6 +29,7 @@
     "@neutralinojs/lib": "^5.5.0",
     "@neutralinojs/neu": "^11.3.0",
     "@shoelace-style/shoelace": "^2.19.1",
+    "@types/fabric": "^5.3.9",
     "esbuild": "^0.24.2",
     "eslint": "^9.18.0",
     "eslint-config-airbnb-base": "^15.0.0",
