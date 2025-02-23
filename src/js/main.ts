@@ -20,13 +20,13 @@ function onWindowClose() {
 async function initCanvas() {
   const inEl = document.getElementById('inCanvas') as HTMLCanvasElement;
   const inCanvas = new F.Canvas(inEl);
-  const inCtx = inCanvas.getContext();
+  // const inCtx = inCanvas.getContext();
   const img = await F.FabricImage.fromURL('https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80&sat=-100&bri=-5');
   inCanvas.add(img);
 
   const ouEl = document.getElementById('ouCanvas') as HTMLCanvasElement;
   const ouCanvas = new F.Canvas(ouEl);
-  const ouCtx = ouCanvas.getContext();
+  // const ouCtx = ouCanvas.getContext();
   const ouImage = await F.FabricImage.fromURL('https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');
   ouCanvas.add(ouImage);
   // const ouImage = document.getElementById('output') as HTMLImageElement;
